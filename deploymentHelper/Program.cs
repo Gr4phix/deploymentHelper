@@ -33,6 +33,7 @@ namespace DeploymentHelper
             try
             {
                 deploymentFile.Load(deploymentFilePath);
+                Temp.DeploymentFilePath = deploymentFilePath;
             }
             catch (Exception e)
             {
@@ -50,6 +51,15 @@ namespace DeploymentHelper
                 else
                 {
                     Console.WriteLine($"smth else found: {stepsNodes.GetType()}");
+                }
+            }
+
+            Console.WriteLine("\n\n\nEXECUTING:");
+            foreach (DeploymentStep stepList in steps)
+            {
+                foreach (Step step in stepList.Steps)
+                {
+                    step.ExecuteStep();
                 }
             }
         }

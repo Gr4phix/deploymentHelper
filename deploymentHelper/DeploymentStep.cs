@@ -24,7 +24,7 @@ namespace DeploymentHelper
             Steps = new List<Step>();
             foreach (var step in stepsNode.ChildNodes)
             {
-                if (stepsNode.GetType().Equals(typeof(XmlElement)))
+                if (step.GetType().Equals(typeof(XmlElement)))
                     Steps.Add(new Step((XmlElement)step));
                 else
                     Console.WriteLine($"Different step type found: {stepsNode.GetType()}");
