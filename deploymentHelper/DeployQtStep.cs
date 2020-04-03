@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
 using System.Xml;
 
 namespace DeploymentHelper
@@ -42,20 +41,15 @@ namespace DeploymentHelper
                             executableFilePath = PathHelper.GetAbsolutePathFromFileNode(child).Item1 ? PathHelper.GetAbsolutePathFromFileNode(child).Item2 : "";
                         }
                     }
+#if DEBUG
                     else
                     {
                         Console.WriteLine($"Different Type found: {childIt.GetType()}");
                     }
+#endif
                 }
 
-                var cmd = "windeployqt";
-                foreach (var arg in arguments)
-                {
-                    cmd += " --" + arg;
-                }
-                cmd += " " + executableFilePath;
-
-                Console.WriteLine(cmd);
+                Console.WriteLine($"\t\tCommand: {ToString()}");
             }
 
             public override bool ExecuteStep()
@@ -89,6 +83,18 @@ namespace DeploymentHelper
                 }
 
                 return true;
+            }
+
+            public override string ToString()
+            {
+                var command = "windeployqt";
+                foreach (var arg in arguments)
+                {
+                    command += " --" + arg;
+                }
+                command += " " + executableFilePath;
+
+                return command;
             }
         }
     }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Xml;
 
 namespace DeploymentHelper
@@ -26,8 +25,10 @@ namespace DeploymentHelper
             {
                 if (step.GetType().Equals(typeof(XmlElement)))
                     Steps.Add(new Step((XmlElement)step));
+#if DEBUG
                 else
                     Console.WriteLine($"Different step type found: {stepsNode.GetType()}");
+#endif
             }
         }
     }

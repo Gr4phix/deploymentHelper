@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DeploymentHelper
+﻿namespace DeploymentHelper
 {
     public static class Temp
     {

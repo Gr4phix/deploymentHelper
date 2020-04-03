@@ -48,10 +48,19 @@ namespace DeploymentHelper
             {
                 if (stepsNodes.GetType().Equals(typeof(XmlElement)))
                     steps.Add(new DeploymentStep((XmlElement)stepsNodes));
+#if DEBUG
                 else
                 {
                     Console.WriteLine($"smth else found: {stepsNodes.GetType()}");
                 }
+#endif
+            }
+
+            Console.WriteLine("\nReading deployment file done. Do you want to execute all commands (y/n) ?");
+            var res = Console.ReadLine();
+            if (!res.StartsWith("y"))
+            {
+                PrintErrorAndExit("Commands will not be executed.");
             }
 
             Console.WriteLine("\n\n\nEXECUTING:");
