@@ -9,14 +9,12 @@ namespace DeploymentHelper
         {
             protected Step parent;
 
-            protected ExecutableDeploymentStep(Step parent, XmlNode node)
+            protected ExecutableDeploymentStep(Step parent)
             {
                 this.parent = parent;
 
                 Console.WriteLine($"\tAdded new step of type: {parent.Type}");
             }
-
-            public abstract bool ExecuteStep();
         }
     }
 }

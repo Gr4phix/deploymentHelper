@@ -7,13 +7,33 @@ namespace DeploymentHelper
     {
         public class BuildDocStep : ExecutableDeploymentStep
         {
-            public BuildDocStep(Step parent, XmlNode node) : base(parent, node)
+            private readonly string pathToDoxygenConfFile;
+
+            public BuildDocStep(Step parent, XmlNode node) : base(parent)
             {
+                foreach (var childIt in node.ChildNodes)
+                {
+                    if (childIt.GetType().Equals(typeof(XmlElement)))
+                    {
+                        var fileNode = (XmlElement)childIt;
+
+                        pathToDoxygenConfFile = PathHelper.GetAbsolutePathFromFileNode(fileNode).Item1 ? PathHelper.GetAbsolutePathFromFileNode(fileNode).Item2 : "";
+                        break;
+                    }
+#if DEBUG
+                    else
+                    {
+                        Console.WriteLine($"Different Type found: {childIt.GetType()}");
+                    }
+#endif
+                }
+
+                Console.WriteLine($"\t\tCommand: {ToString()}");
             }
 
-            public override bool ExecuteStep()
+            public override string ToString()
             {
-                throw new NotImplementedException();
+                return "doxygen " + pathToDoxygenConfFile;
             }
         }
     }

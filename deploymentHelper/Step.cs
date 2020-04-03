@@ -1,4 +1,6 @@
-﻿using System.Xml;
+﻿using DeploymentHelper.Steps;
+using System;
+using System.Xml;
 
 namespace DeploymentHelper
 {
@@ -28,6 +30,28 @@ namespace DeploymentHelper
             };
         }
 
-        public bool ExecuteStep() => childStep != null ? childStep.ExecuteStep() : true;
+        public bool ExecuteStep()
+        {
+            switch (Type)
+            {
+                case EStepType.DEPLOY_QT:
+                case EStepType.BUILD_DOC:
+                    try
+                    {
+                        CmdExecuteHelper.ExecuteCommand(childStep.ToString());
+                    }
+                    catch (Exception)
+                    {
+                        return false;
+                    }
+
+                    return true;
+
+                case EStepType.UPLOAD_FTP:
+                    return ((UploadFtpStep)childStep).ExecuteStep();
+            }
+
+            return false;
+        }
     }
 }

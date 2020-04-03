@@ -7,11 +7,11 @@ namespace DeploymentHelper
     {
         public class UploadFtpStep : ExecutableDeploymentStep
         {
-            public UploadFtpStep(Step parent, XmlNode node) : base(parent, node)
+            public UploadFtpStep(Step parent, XmlNode node) : base(parent)
             {
             }
 
-            public override bool ExecuteStep()
+            public bool ExecuteStep()
             {
                 throw new NotImplementedException();
             }

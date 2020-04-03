@@ -12,7 +12,7 @@ namespace DeploymentHelper
             private readonly List<string> arguments;
             private readonly string executableFilePath;
 
-            public DeployQtStep(Step parent, XmlNode node) : base(parent, node)
+            public DeployQtStep(Step parent, XmlNode node) : base(parent)
             {
                 arguments = new List<string>();
                 foreach (var childIt in node.ChildNodes)
@@ -50,39 +50,6 @@ namespace DeploymentHelper
                 }
 
                 Console.WriteLine($"\t\tCommand: {ToString()}");
-            }
-
-            public override bool ExecuteStep()
-            {
-                try
-                {
-                    var command = "windeployqt";
-                    foreach (var arg in arguments)
-                    {
-                        command += " --" + arg;
-                    }
-                    command += " " + executableFilePath;
-
-                    Process cmd = new Process();
-                    cmd.StartInfo.FileName = "cmd.exe";
-                    cmd.StartInfo.RedirectStandardInput = true;
-                    cmd.StartInfo.RedirectStandardOutput = true;
-                    cmd.StartInfo.CreateNoWindow = true;
-                    cmd.StartInfo.UseShellExecute = false;
-                    cmd.Start();
-
-                    cmd.StandardInput.WriteLine(command);
-                    cmd.StandardInput.Flush();
-                    cmd.StandardInput.Close();
-                    cmd.WaitForExit();
-                    Console.WriteLine(cmd.StandardOutput.ReadToEnd());
-                }
-                catch (Exception)
-                {
-                    return false;
-                }
-
-                return true;
             }
 
             public override string ToString()
