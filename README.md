@@ -2,10 +2,49 @@
 
 ![logo](./logo.png)
 
+This helper program is written to automate complex deployment toolchains with one easy script file.
+
+Written in C# using the .NET Core 3.1.
+
 ## Table of contents <!-- omit in toc -->
+- [Features](#features)
+- [Overview](#overview)
+- [Deployment-File strucure](#deployment-file-strucure)
 - [Implemented Steps](#implemented-steps)
   - [QT-Deploy Step](#qt-deploy-step)
+  - [Upload using FTP](#upload-using-ftp)
   - [Build documentation](#build-documentation)
+
+## Features
+* Automated deployment of QT-C++ Apps on Windows using 'windeployqt'
+* Automated documentation build using Doxygen
+* Automated FTP Uploads
+
+## Overview
+This program uses an deployment file written in XML (for more information about this file: [Deployment-File strucure](#deployment-file-strucure)).
+
+First it analyzes the file while looking for errors. If no errors are found within the file, the application displays all steps and asks if you want to execute them.
+
+## Deployment-File strucure
+The deployment file always need to contain
+```XML
+<?xml version='1.0' ?>
+<deployment>
+    ...
+</deployment>
+```
+as an overall wrapper. In those `deployment`-tags you can define many different deploymentstep-lists, e.g. to seperate deployments of different applications in one script. One deploymentstep-list is added by using 
+```XML
+<deploymentsteps type='qt-cpp'>
+    ...
+</deploymentsteps>
+```
+where the `type`-attribute needs to be chosen according to the following table:
+|type|usecase|
+|---|---|
+|qt-cpp|Application written in QT & C++|
+|cs|Application written in C#|
+Within those deploymentstep-lists you can add many steps, which are outlined in [Implemented Steps](#implemented-steps).
 
 ## Implemented Steps
 ### QT-Deploy Step
@@ -41,6 +80,9 @@ and would result in
 windeployqt --release --no-translations --no-svg --dir [...]\target\bin\x86_64 [...]\target\bin\x86_64\binary.exe
 ```
 which will be executed.
+
+### Upload using FTP
+to be done
 
 ### Build documentation
 This step automatically builds doxygen docs. For the program to generate the documentation, 'doxygen' must be available in the PATH of your OS and the doxygen config-file needs to be already generated.
