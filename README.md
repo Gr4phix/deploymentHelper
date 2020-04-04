@@ -1,7 +1,14 @@
-# deploymentHelper
+# deploymentHelper <!-- omit in toc -->
 
-### Implemented Steps
-#### QT-Deploy Step
+![logo](./logo.png)
+
+## Table of contents <!-- omit in toc -->
+- [Implemented Steps](#implemented-steps)
+  - [QT-Deploy Step](#qt-deploy-step)
+  - [Build documentation](#build-documentation)
+
+## Implemented Steps
+### QT-Deploy Step
 Uses the 'windeployqt'-tool to deploy an QT-application. 'windeployqt' needs to be in the PATH of your OS.
 
 This kind of step is added by using
@@ -35,7 +42,7 @@ windeployqt --release --no-translations --no-svg --dir [...]\target\bin\x86_64 [
 ```
 which will be executed.
 
-#### Build documentation
+### Build documentation
 This step automatically builds doxygen docs. For the program to generate the documentation, 'doxygen' must be available in the PATH of your OS and the doxygen config-file needs to be already generated.
 
 This kind of step is added by using

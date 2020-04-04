@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Vectornator for iOS (http://vectornator.io/) -->
+
+<svg
+   xmlns:vectornator="http://vectornator.io"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;"
+   xml:space="preserve"
+   version="1.1"
+   viewBox="0 0 1280 720"
+   id="svg47"
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="C:\Users\flori\source\repos\deploymentHelper\logo.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="2560"
+   inkscape:window-height="1417"
+   id="namedview49"
+   showgrid="false"
+   showguides="true"
+   inkscape:guide-bbox="true"
+   inkscape:zoom="1.4142136"
+   inkscape:cx="713.84319"
+   inkscape:cy="680.50512"
+   inkscape:window-x="1912"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="layer4"><sodipodi:guide
+     position="795.88572,509.02857"
+     orientation="0,1"
+     id="guide3754"
+     inkscape:locked="false" /><sodipodi:guide
+     position="797.94286,493.02857"
+     orientation="0,1"
+     id="guide3756"
+     inkscape:locked="false" /><sodipodi:guide
+     position="799.77143,547.6"
+     orientation="0,1"
+     id="guide3758"
+     inkscape:locked="false" /><sodipodi:guide
+     position="801.58594,547.73437"
+     orientation="1,0"
+     id="guide4567"
+     inkscape:locked="false" /><sodipodi:guide
+     position="731.61245,534.81579"
+     orientation="1,0"
+     id="guide4573"
+     inkscape:locked="false" /><sodipodi:guide
+     position="749.62158,533.25795"
+     orientation="1,0"
+     id="guide4575"
+     inkscape:locked="false" /><sodipodi:guide
+     position="740.75,574.75"
+     orientation="1,0"
+     id="guide4579"
+     inkscape:locked="false" /><sodipodi:guide
+     position="714.75,602.25"
+     orientation="0,1"
+     id="guide4581"
+     inkscape:locked="false" /><sodipodi:guide
+     position="679.875,650.25"
+     orientation="1,0"
+     id="guide4587"
+     inkscape:locked="false" /><sodipodi:guide
+     position="698.375,635"
+     orientation="1,0"
+     id="guide4589"
+     inkscape:locked="false" /></sodipodi:namedview>
+<metadata
+   id="metadata2">
+<vectornator:setting
+   key="DisplayWhiteBackground"
+   value="0" />
+<vectornator:setting
+   key="RulersVisible"
+   value="1" />
+<vectornator:setting
+   key="SnapToEdges"
+   value="0" />
+<vectornator:setting
+   key="Units"
+   value="Pixels" />
+<vectornator:setting
+   key="DynamicGuides"
+   value="0" />
+<vectornator:setting
+   key="SnapToPoints"
+   value="0" />
+<vectornator:setting
+   key="SnapToGrid"
+   value="0" />
+<vectornator:setting
+   key="SnapToGuides"
+   value="1" />
+<vectornator:setting
+   key="GridSpacing"
+   value="36" />
+<rdf:RDF><cc:Work
+     rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata>
+<defs
+   id="defs4" />
+<g
+   id="Layer 1"
+   vectornator:layerName="Layer 1"
+   style="display:inline">
+<g
+   inkscape:groupmode="layer"
+   id="layer4"
+   inkscape:label="Layer 2" /><g
+   id="g38"
+   style="opacity:1">
+<path
+   vectornator:shadowColor="#bf6100"
+   vectornator:shadowOpacity="0"
+   vectornator:shadowRadius="18.2991"
+   d="m 145.366,208.971 v -36.607 h 17.965 v 95.731 h -17.965 v -10.213 c -1.927,3.978 -4.419,6.973 -7.475,8.982 -3.055,2.01 -6.654,3.015 -10.797,3.015 -7.875,0 -13.986,-3.158 -18.334,-9.475 -4.348,-6.316 -6.521,-15.216 -6.521,-26.701 0,-11.648 2.204,-20.59 6.613,-26.824 4.41,-6.234 10.695,-9.352 18.857,-9.352 3.692,0 7.004,0.954 9.936,2.861 2.933,1.907 5.507,4.768 7.721,8.583 z m -25.101,24.855 c 0,6.645 1.107,11.854 3.322,15.627 2.215,3.774 5.271,5.66 9.167,5.66 3.897,0 6.973,-1.886 9.229,-5.66 2.256,-3.773 3.383,-8.982 3.383,-15.627 0,-6.644 -1.127,-11.853 -3.383,-15.627 -2.256,-3.773 -5.332,-5.66 -9.229,-5.66 -3.896,0 -6.952,1.887 -9.167,5.66 -2.215,3.774 -3.322,8.983 -3.322,15.627 z"
+   vectornator:shadowOffset="11.9651"
+   vectornator:shadowAngle="0.396541"
+   id="path6"
+   inkscape:connector-curvature="0"
+   style="opacity:1;fill:#000000" />
+<path
+   vectornator:shadowColor="#bf6100"
+   vectornator:shadowOpacity="0"
+   vectornator:shadowRadius="18.2991"
+   d="m 232.331,264.711 c -4.183,1.723 -8.449,3.015 -12.797,3.876 -4.347,0.861 -8.941,1.292 -13.781,1.292 -11.525,0 -20.333,-3.086 -26.424,-9.259 -6.091,-6.173 -9.136,-15.063 -9.136,-26.671 0,-11.238 2.932,-20.118 8.797,-26.639 5.866,-6.522 13.864,-9.783 23.995,-9.783 10.212,0 18.139,3.025 23.778,9.075 5.64,6.05 8.46,14.571 8.46,25.563 v 7.321 h -46.696 c 0.041,5.414 1.64,9.454 4.798,12.12 3.159,2.667 7.875,4 14.151,4 4.142,0 8.223,-0.595 12.243,-1.785 4.019,-1.189 8.224,-3.076 12.612,-5.66 z m -15.258,-38.76 c -0.082,-4.758 -1.302,-8.357 -3.66,-10.797 -2.359,-2.441 -5.835,-3.661 -10.428,-3.661 -4.143,0 -7.445,1.261 -9.906,3.784 -2.461,2.522 -3.917,6.101 -4.368,10.736 z"
+   vectornator:shadowOffset="11.9651"
+   vectornator:shadowAngle="0.396541"
+   id="path8"
+   inkscape:connector-curvature="0"
+   style="opacity:1;fill:#000000" />
+<path
+   vectornator:shadowColor="#bf6100"
+   vectornator:shadowOpacity="0"
+   vectornator:shadowRadius="18.2991"
+   d="m 259.557,258.374 v 35.93 h -17.965 v -95.115 h 17.965 v 10.335 c 1.886,-3.978 4.368,-6.972 7.444,-8.982 3.076,-2.01 6.686,-3.015 10.828,-3.015 7.875,0 13.987,3.159 18.334,9.475 4.348,6.316 6.522,15.217 6.522,26.701 0,11.649 -2.205,20.59 -6.614,26.824 -4.409,6.235 -10.695,9.352 -18.857,9.352 -3.691,0 -7.003,-0.954 -9.936,-2.861 -2.933,-1.907 -5.506,-4.788 -7.721,-8.644 z m 25.101,-24.794 c 0,-6.644 -1.107,-11.853 -3.322,-15.627 -2.215,-3.773 -5.27,-5.66 -9.167,-5.66 -3.896,0 -6.973,1.887 -9.228,5.66 -2.256,3.774 -3.384,8.983 -3.384,15.627 0,6.645 1.128,11.854 3.384,15.627 2.255,3.774 5.332,5.66 9.228,5.66 3.897,0 6.952,-1.886 9.167,-5.66 2.215,-3.773 3.322,-8.982 3.322,-15.627 z"
+   vectornator:shadowOffset="11.9651"
+   vectornator:shadowAngle="0.396541"
+   id="path10"
+   inkscape:connector-curvature="0"
+   style="opacity:1;fill:#000000" />
+<path
+   vectornator:shadowColor="#bf6100"
+   vectornator:shadowOpacity="0"
+   vectornator:shadowRadius="18.2991"
+   d="m 324.004,239.363 v -53.156 h -18.273 v -13.843 h 36.299 v 66.999 c 0,5.414 0.841,9.249 2.523,11.505 1.681,2.256 4.532,3.384 8.551,3.384 h 14.397 v 13.843 H 348.06 c -8.573,0 -14.725,-2.215 -18.457,-6.645 -3.733,-4.429 -5.599,-11.792 -5.599,-22.087 z"
+   vectornator:shadowOffset="11.9651"
+   vectornator:shadowAngle="0.396541"
+   id="path12"
+   inkscape:connector-curvature="0"
+   style="opacity:1;fill:#000000" />
+<path
+   vectornator:shadowColor="#bf6100"
+   vectornator:shadowOpacity="0"
+   vectornator:shadowRadius="18.2991"
+   d="m 405.924,212.17 c -4.307,0 -7.691,1.897 -10.152,5.691 -2.461,3.794 -3.691,9.075 -3.691,15.842 0,6.768 1.23,12.049 3.691,15.842 2.461,3.794 5.845,5.691 10.152,5.691 4.347,0 7.752,-1.897 10.213,-5.691 2.461,-3.793 3.691,-9.074 3.691,-15.842 0,-6.767 -1.23,-12.048 -3.691,-15.842 -2.461,-3.794 -5.866,-5.691 -10.213,-5.691 z m -31.869,21.533 c 0,-11.115 2.881,-19.923 8.644,-26.424 5.762,-6.501 13.504,-9.752 23.225,-9.752 9.761,0 17.524,3.251 23.286,9.752 5.763,6.501 8.644,15.309 8.644,26.424 0,11.115 -2.881,19.924 -8.644,26.424 -5.762,6.501 -13.525,9.752 -23.286,9.752 -9.721,0 -17.463,-3.251 -23.225,-9.752 -5.763,-6.5 -8.644,-15.309 -8.644,-26.424 z"
+   vectornator:shadowOffset="11.9651"
+   vectornator:shadowAngle="0.396541"
+   id="path14"
+   inkscape:connector-curvature="0"
+   style="opacity:1;fill:#000000" />
+<path
+   vectornator:shadowColor="#bf6100"
+   vectornator:shadowOpacity="0"
+   vectornator:shadowRadius="18.2991"
+   d="m 479.599,275.539 c -2.42,6.481 -5.321,11.208 -8.705,14.181 -3.384,2.974 -7.496,4.461 -12.336,4.461 H 443.67 v -13.72 h 7.321 c 3.691,0 6.398,-0.626 8.121,-1.876 1.723,-1.251 3.466,-4.153 5.23,-8.706 l 1.353,-3.691 -26.209,-66.999 h 18.949 l 15.75,44.727 15.074,-44.727 h 18.949 z"
+   vectornator:shadowOffset="11.9651"
+   vectornator:shadowAngle="0.396541"
+   id="path16"
+   inkscape:connector-curvature="0"
+   style="opacity:1;fill:#000000" />
+<path
+   vectornator:shadowColor="#bf6100"
+   vectornator:shadowOpacity="0"
+   vectornator:shadowRadius="18.2991"
+   d="m 546.138,206.079 c 1.354,-2.912 3.077,-5.065 5.168,-6.46 2.092,-1.394 4.656,-2.092 7.691,-2.092 5.947,0 10.059,2.051 12.335,6.153 2.277,4.101 3.415,12.633 3.415,25.593 v 38.822 h -14.766 v -44.236 c 0,-5.127 -0.39,-8.551 -1.169,-10.274 -0.779,-1.723 -2.194,-2.584 -4.245,-2.584 -2.051,0 -3.486,0.882 -4.307,2.646 -0.82,1.763 -1.23,5.167 -1.23,10.212 v 44.236 h -14.581 v -44.236 c 0,-5.045 -0.41,-8.449 -1.231,-10.212 -0.82,-1.764 -2.255,-2.646 -4.306,-2.646 -2.051,0 -3.466,0.861 -4.245,2.584 -0.78,1.723 -1.169,5.147 -1.169,10.274 v 44.236 h -14.766 v -68.906 h 13.105 v 7.136 c 1.025,-2.707 2.666,-4.85 4.921,-6.429 2.256,-1.579 4.779,-2.369 7.568,-2.369 2.789,0 5.332,0.831 7.629,2.492 2.297,1.661 3.691,3.681 4.183,6.06 z"
+   vectornator:shadowOffset="11.9651"
+   vectornator:shadowAngle="0.396541"
+   id="path18"
+   inkscape:connector-curvature="0"
+   style="opacity:1;fill:#000000" />
+<path
+   vectornator:shadowColor="#bf6100"
+   vectornator:shadowOpacity="0"
+   vectornator:shadowRadius="18.2991"
+   d="m 639.317,264.711 c -4.184,1.723 -8.449,3.015 -12.797,3.876 -4.348,0.861 -8.941,1.292 -13.781,1.292 -11.526,0 -20.334,-3.086 -26.424,-9.259 -6.091,-6.173 -9.137,-15.063 -9.137,-26.671 0,-11.238 2.933,-20.118 8.798,-26.639 5.865,-6.522 13.863,-9.783 23.994,-9.783 10.213,0 18.139,3.025 23.779,9.075 5.64,6.05 8.46,14.571 8.46,25.563 v 7.321 h -46.697 c 0.041,5.414 1.641,9.454 4.799,12.12 3.158,2.667 7.875,4 14.151,4 4.142,0 8.223,-0.595 12.243,-1.785 4.019,-1.189 8.223,-3.076 12.612,-5.66 z m -15.258,-38.76 c -0.082,-4.758 -1.302,-8.357 -3.66,-10.797 -2.359,-2.441 -5.835,-3.661 -10.429,-3.661 -4.142,0 -7.444,1.261 -9.905,3.784 -2.461,2.522 -3.917,6.101 -4.368,10.736 z"
+   vectornator:shadowOffset="11.9651"
+   vectornator:shadowAngle="0.396541"
+   id="path20"
+   inkscape:connector-curvature="0"
+   style="opacity:1;fill:#000000" />
+<path
+   vectornator:shadowColor="#bf6100"
+   vectornator:shadowOpacity="0"
+   vectornator:shadowRadius="18.2991"
+   d="m 705.241,223.367 v 44.728 h -17.904 v -41.959 c 0,-5.004 -0.707,-8.583 -2.122,-10.736 -1.415,-2.153 -3.722,-3.23 -6.922,-3.23 -3.24,0 -5.793,1.456 -7.659,4.368 -1.866,2.912 -2.8,6.952 -2.8,12.12 v 39.437 h -17.903 v -68.906 h 17.903 v 10.335 c 1.272,-3.814 3.446,-6.767 6.522,-8.859 3.076,-2.092 6.788,-3.138 11.136,-3.138 6.521,0 11.443,2.164 14.765,6.491 3.323,4.327 4.984,10.777 4.984,19.349 z"
+   vectornator:shadowOffset="11.9651"
+   vectornator:shadowAngle="0.396541"
+   id="path22"
+   inkscape:connector-curvature="0"
+   style="opacity:1;fill:#000000" />
+<path
+   vectornator:shadowColor="#bf6100"
+   vectornator:shadowOpacity="0"
+   vectornator:shadowRadius="18.2991"
+   d="m 749.631,179.624 v 31.34743 h 34.93543 v 16 H 749.631 V 245.639 c 0,3.076 0.749,5.28 2.246,6.613 1.497,1.333 3.989,2 7.475,2 h 13.843 v 13.843 H 758.06 c -10.336,0 -17.329,-1.651 -20.98,-4.953 -3.65,-3.302 -5.475,-9.423 -5.475,-18.365 v -17.80557 h -17.596 v -16 h 17.596 V 179.624 Z"
+   vectornator:shadowOffset="11.9651"
+   vectornator:shadowAngle="0.396541"
+   id="path24"
+   inkscape:connector-curvature="0"
+   style="opacity:1;fill:#000000"
+   sodipodi:nodetypes="cccccsssccscscccccc" />
+<path
+   vectornator:shadowColor="#bf6100"
+   vectornator:shadowOpacity="0"
+   vectornator:shadowRadius="18.2991"
+   d="m 783.44,176.24 h 18.149 v 35.007 h 22.702 V 176.24 h 18.15 v 91.855 h -18.15 v -40.852 h -22.702 v 40.852 H 783.44 Z"
+   vectornator:shadowOffset="11.9651"
+   vectornator:shadowAngle="0.396541"
+   id="path26"
+   inkscape:connector-curvature="0"
+   style="opacity:1;fill:#000000" />
+<path
+   vectornator:shadowColor="#bf6100"
+   vectornator:shadowOpacity="0"
+   vectornator:shadowRadius="18.2991"
+   d="m 910.641,264.711 c -4.184,1.723 -8.449,3.015 -12.797,3.876 -4.348,0.861 -8.941,1.292 -13.781,1.292 -11.526,0 -20.334,-3.086 -26.425,-9.259 -6.09,-6.173 -9.136,-15.063 -9.136,-26.671 0,-11.238 2.933,-20.118 8.798,-26.639 5.865,-6.522 13.863,-9.783 23.994,-9.783 10.213,0 18.139,3.025 23.779,9.075 5.64,6.05 8.459,14.571 8.459,25.563 v 7.321 h -46.696 c 0.041,5.414 1.641,9.454 4.799,12.12 3.158,2.667 7.875,4 14.15,4 4.143,0 8.224,-0.595 12.243,-1.785 4.02,-1.189 8.224,-3.076 12.613,-5.66 z m -15.258,-38.76 c -0.082,-4.758 -1.302,-8.357 -3.661,-10.797 -2.358,-2.441 -5.834,-3.661 -10.428,-3.661 -4.142,0 -7.444,1.261 -9.905,3.784 -2.461,2.522 -3.917,6.101 -4.368,10.736 z"
+   vectornator:shadowOffset="11.9651"
+   vectornator:shadowAngle="0.396541"
+   id="path28"
+   inkscape:connector-curvature="0"
+   style="opacity:1;fill:#000000" />
+<path
+   vectornator:shadowColor="#bf6100"
+   vectornator:shadowOpacity="0"
+   vectornator:shadowRadius="18.2991"
+   d="M 934.482,239.363 V 186.207 H 916.21 v -13.843 h 36.299 v 66.999 c 0,5.414 0.841,9.249 2.522,11.505 1.682,2.256 4.533,3.384 8.552,3.384 h 14.397 v 13.843 h -19.442 c -8.572,0 -14.724,-2.215 -18.457,-6.645 -3.732,-4.429 -5.599,-11.792 -5.599,-22.087 z"
+   vectornator:shadowOffset="11.9651"
+   vectornator:shadowAngle="0.396541"
+   id="path30"
+   inkscape:connector-curvature="0"
+   style="opacity:1;fill:#000000" />
+<path
+   vectornator:shadowColor="#bf6100"
+   vectornator:shadowOpacity="0"
+   vectornator:shadowRadius="18.2991"
+   d="m 1005.7,258.374 v 35.93 h -17.968 v -95.115 h 17.968 v 10.335 c 1.88,-3.978 4.37,-6.972 7.44,-8.982 3.08,-2.01 6.69,-3.015 10.83,-3.015 7.87,0 13.99,3.159 18.33,9.475 4.35,6.316 6.53,15.217 6.53,26.701 0,11.649 -2.21,20.59 -6.62,26.824 -4.41,6.235 -10.69,9.352 -18.86,9.352 -3.69,0 -7,-0.954 -9.93,-2.861 -2.93,-1.907 -5.51,-4.788 -7.72,-8.644 z m 25.1,-24.794 c 0,-6.644 -1.11,-11.853 -3.32,-15.627 -2.22,-3.773 -5.27,-5.66 -9.17,-5.66 -3.9,0 -6.97,1.887 -9.23,5.66 -2.25,3.774 -3.38,8.983 -3.38,15.627 0,6.645 1.13,11.854 3.38,15.627 2.26,3.774 5.33,5.66 9.23,5.66 3.9,0 6.95,-1.886 9.17,-5.66 2.21,-3.773 3.32,-8.982 3.32,-15.627 z"
+   vectornator:shadowOffset="11.9651"
+   vectornator:shadowAngle="0.396541"
+   id="path32"
+   inkscape:connector-curvature="0"
+   style="opacity:1;fill:#000000" />
+<path
+   vectornator:shadowColor="#bf6100"
+   vectornator:shadowOpacity="0"
+   vectornator:shadowRadius="18.2991"
+   d="m 1114.13,264.711 c -4.18,1.723 -8.45,3.015 -12.79,3.876 -4.35,0.861 -8.94,1.292 -13.78,1.292 -11.53,0 -20.34,-3.086 -26.43,-9.259 -6.09,-6.173 -9.14,-15.063 -9.14,-26.671 0,-11.238 2.94,-20.118 8.8,-26.639 5.87,-6.522 13.87,-9.783 24,-9.783 10.21,0 18.14,3.025 23.78,9.075 5.64,6.05 8.46,14.571 8.46,25.563 v 7.321 h -46.7 c 0.04,5.414 1.64,9.454 4.8,12.12 3.16,2.667 7.87,4 14.15,4 4.14,0 8.22,-0.595 12.24,-1.785 4.02,-1.189 8.22,-3.076 12.61,-5.66 z m -15.25,-38.76 c -0.09,-4.758 -1.31,-8.357 -3.66,-10.797 -2.36,-2.441 -5.84,-3.661 -10.43,-3.661 -4.15,0 -7.45,1.261 -9.91,3.784 -2.46,2.522 -3.92,6.101 -4.37,10.736 z"
+   vectornator:shadowOffset="11.9651"
+   vectornator:shadowAngle="0.396541"
+   id="path34"
+   inkscape:connector-curvature="0"
+   style="opacity:1;fill:#000000" />
+<path
+   vectornator:shadowColor="#bf6100"
+   vectornator:shadowOpacity="0"
+   vectornator:shadowRadius="18.2991"
+   d="m 1184.98,218.199 c -1.97,-1.804 -4.28,-3.158 -6.92,-4.06 -2.65,-0.903 -5.55,-1.354 -8.71,-1.354 -3.81,0 -7.14,0.667 -10,2 -2.85,1.333 -5.05,3.271 -6.61,5.814 -0.98,1.558 -1.67,3.445 -2.06,5.66 -0.39,2.215 -0.58,5.578 -0.58,10.09 v 31.746 h -18.03 v -68.906 h 18.03 v 10.705 c 1.76,-3.938 4.47,-6.983 8.12,-9.137 3.65,-2.153 7.91,-3.23 12.79,-3.23 2.46,0 4.87,0.298 7.23,0.892 2.36,0.595 4.61,1.467 6.74,2.615 z"
+   vectornator:shadowOffset="11.9651"
+   vectornator:shadowAngle="0.396541"
+   id="path36"
+   inkscape:connector-curvature="0"
+   style="opacity:1;fill:#000000" />
+<rect
+   style="fill:#000000;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+   id="rect3760"
+   width="18.145937"
+   height="4.2585158"
+   x="783.44"
+   y="172.39999" /><rect
+   style="fill:#000000;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+   id="rect4577"
+   width="18.00913"
+   height="48.790367"
+   x="731.61243"
+   y="134.51559" /><path
+   style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+   d="m 740.75,117.75 60.83594,54.65 -18.14594,-1e-5 -42.69,-37.9286 z"
+   id="path4585"
+   inkscape:connector-curvature="0" /><path
+   style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+   d="m 679.875,172.4 60.875,-54.65 v 16.72139 L 698.375,172.4 Z"
+   id="path4591"
+   inkscape:connector-curvature="0" /><path
+   style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+   d="m 698.375,172.4 -30.541,26.789 H 649.931 L 679.875,172.4 Z"
+   id="path4593"
+   inkscape:connector-curvature="0" /></g>
+<path
+   vectornator:shadowColor="#bf6100"
+   vectornator:shadowOpacity="0"
+   vectornator:shadowRadius="18.2991"
+   d="M 241.628,280.472 H 448.59 v 13.809 H 241.628 Z"
+   vectornator:shadowOffset="11.9651"
+   vectornator:shadowAngle="0.396541"
+   id="path40"
+   inkscape:connector-curvature="0"
+   style="opacity:1;fill:#000000" />
+<path
+   vectornator:shadowColor="#bf6100"
+   vectornator:shadowOpacity="0"
+   vectornator:shadowRadius="18.2991"
+   d="m 153.454,172.373 h 156.165 v 13.826 H 153.454 Z"
+   vectornator:shadowOffset="11.9651"
+   vectornator:shadowAngle="0.396541"
+   id="path42"
+   inkscape:connector-curvature="0"
+   style="opacity:1;fill:#000000" />
+<path
+   vectornator:shadowColor="#bf6100"
+   vectornator:shadowOpacity="0"
+   vectornator:shadowRadius="18.2991"
+   d="m 824.382,172.39 h 95.988 v 13.792 h -95.988 z"
+   vectornator:shadowOffset="11.9651"
+   vectornator:shadowAngle="0.396541"
+   id="path44"
+   inkscape:connector-curvature="0"
+   style="opacity:1;fill:#000000" />
+</g>
+<g
+   inkscape:groupmode="layer"
+   id="layer3"
+   inkscape:label="Layer 1"
+   style="display:inline" /></svg>
