@@ -44,6 +44,7 @@ where the `type`-attribute needs to be chosen according to the following table:
 |---|---|
 |qt-cpp|Application written in QT & C++|
 |cs|Application written in C#|
+
 Within those deploymentstep-lists you can add many steps, which are outlined in [Implemented Steps](#implemented-steps).
 
 ## Implemented Steps
