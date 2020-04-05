@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO.Compression;
-using System.Security.Cryptography;
 using System.Xml;
 using WinSCP;
 
@@ -133,7 +131,8 @@ namespace DeploymentHelper
                                 }
                             }
                         } while (true);
-                        Console.Write("\n");
+                        Console.WriteLine();
+                        Console.WriteLine();
                     }
 
                     var sesOpt = new SessionOptions

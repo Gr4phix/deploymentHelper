@@ -10,7 +10,7 @@ namespace DeploymentHelper
             if (element.Name.Equals("dir"))
             {
                 if (element.GetAttribute("path-type").Equals("rel"))
-                    return (true, Directory.GetDirectoryRoot(Temp.DeploymentFilePath) + @$"{element.InnerText}");
+                    return (true, Path.GetDirectoryName(Temp.DeploymentFilePath) + @$"\{element.InnerText}");
                 else
                     return (true, element.InnerText);
             }
@@ -23,7 +23,7 @@ namespace DeploymentHelper
             if (element.Name.Equals("file"))
             {
                 if (element.GetAttribute("path-type").Equals("rel"))
-                    return (true, Directory.GetDirectoryRoot(Temp.DeploymentFilePath) + @$"{element.InnerText}");
+                    return (true, Path.GetDirectoryName(Temp.DeploymentFilePath) + @$"\{element.InnerText}");
                 else
                     return (true, element.InnerText);
             }
