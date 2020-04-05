@@ -80,7 +80,7 @@ namespace DeploymentHelper
 
             var endtime = DateTime.Now;
             Console.WriteLine($"\n\n\nExecution finished at: {endtime.ToLongTimeString()}");
-            Console.WriteLine($"The execution of all steps took {(endtime - startTime).TotalMinutes} minutes and {(endtime - startTime).TotalMinutes} seconds in total.");
+            Console.WriteLine($"The execution of all steps took {(endtime - startTime).Minutes} minutes and {(endtime - startTime).Seconds} seconds in total.");
         }
 
         private static void PrintErrorAndExit(string errorDescr = "")

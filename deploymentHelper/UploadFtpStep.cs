@@ -161,9 +161,9 @@ namespace DeploymentHelper
                                 var transRes = session.PutFiles(src, dest, false, transOpt);
                                 transRes.Check();
 
-                                foreach (var transfer in transRes.Transfers)
+                                foreach (TransferEventArgs transfer in transRes.Transfers)
                                 {
-                                    Console.WriteLine($"Upload of {transfer} to {dest} succeeded");
+                                    Console.WriteLine($"Upload of {transfer.FileName} to {transfer.Destination} succeeded");
                                 }
                             }
                         }
