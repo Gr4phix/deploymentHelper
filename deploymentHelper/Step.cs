@@ -8,7 +8,7 @@ namespace DeploymentHelper
     {
         public EStepType Type { get; }
 
-        private readonly Steps.ExecutableDeploymentStep childStep;
+        private readonly ExecutableDeploymentStep childStep;
 
         public Step(XmlNode stepNode)
         {
@@ -22,9 +22,9 @@ namespace DeploymentHelper
 
             childStep = Type switch
             {
-                EStepType.DEPLOY_QT => new Steps.DeployQtStep(this, stepNode),
-                EStepType.BUILD_DOC => new Steps.BuildDocStep(this, stepNode),
-                EStepType.UPLOAD_FTP => new Steps.UploadFtpStep(this, stepNode),
+                EStepType.DEPLOY_QT => new DeployQtStep(this, stepNode),
+                EStepType.BUILD_DOC => new BuildDocStep(this, stepNode),
+                EStepType.UPLOAD_FTP => new UploadFtpStep(this, stepNode),
                 EStepType.NONE => null,
                 _ => null,
             };

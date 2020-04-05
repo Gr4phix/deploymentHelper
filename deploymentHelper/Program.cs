@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 using System.Xml;
 
 namespace DeploymentHelper
@@ -9,6 +10,10 @@ namespace DeploymentHelper
     {
         private static void Main(string[] args)
         {
+            Console.WriteLine("╔════════════════════════════════════════╗");
+            Console.WriteLine($"║      deploymentHelper    v{Assembly.GetExecutingAssembly().GetName().Version.ToString()}      ║");
+            Console.WriteLine("╚════════════════════════════════════════╝\n");
+
 #if DEBUG
             if (args.Length == 0)
                 args = new string[]
@@ -63,7 +68,8 @@ namespace DeploymentHelper
                 PrintErrorAndExit("Commands will not be executed.");
             }
 
-            Console.WriteLine("\n\n\nEXECUTING:");
+            var startTime = DateTime.Now;
+            Console.WriteLine($"\n\n\nExecution started at: {startTime.ToLongTimeString()}");
             foreach (DeploymentStep stepList in steps)
             {
                 foreach (Step step in stepList.Steps)
@@ -71,6 +77,10 @@ namespace DeploymentHelper
                     step.ExecuteStep();
                 }
             }
+
+            var endtime = DateTime.Now;
+            Console.WriteLine($"\n\n\nExecution finished at: {endtime.ToLongTimeString()}");
+            Console.WriteLine($"The execution of all steps took {(endtime - startTime).TotalMinutes} minutes and {(endtime - startTime).TotalMinutes} seconds in total.");
         }
 
         private static void PrintErrorAndExit(string errorDescr = "")
