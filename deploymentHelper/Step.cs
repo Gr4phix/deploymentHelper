@@ -18,6 +18,7 @@ namespace DeploymentHelper
                 "build-doc" => EStepType.BUILD_DOC,
                 "upload-ftp" => EStepType.UPLOAD_FTP,
                 "msbuild" => EStepType.MSBUILD,
+                "clean" => EStepType.CLEAN,
                 _ => EStepType.NONE,
             };
 
@@ -27,6 +28,7 @@ namespace DeploymentHelper
                 EStepType.BUILD_DOC => new BuildDocStep(this, stepNode),
                 EStepType.UPLOAD_FTP => new UploadFtpStep(this, stepNode),
                 EStepType.MSBUILD => new MsBuildStep(this, stepNode),
+                EStepType.CLEAN => new CleanStep(this, stepNode),
                 EStepType.NONE => null,
                 _ => null,
             };
@@ -52,6 +54,9 @@ namespace DeploymentHelper
 
                 case EStepType.UPLOAD_FTP:
                     return ((UploadFtpStep)childStep).ExecuteStep();
+
+                case EStepType.CLEAN:
+                    return ((CleanStep)childStep).ExecuteStep();
             }
 
             return false;

@@ -6,6 +6,7 @@
         BUILD_DOC,
         UPLOAD_FTP,
         MSBUILD,
+        CLEAN,
         NONE
     }
 }
