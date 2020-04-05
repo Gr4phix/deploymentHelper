@@ -5,6 +5,7 @@
         DEPLOY_QT,
         BUILD_DOC,
         UPLOAD_FTP,
+        MSBUILD,
         NONE
     }
 }

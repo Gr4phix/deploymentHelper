@@ -17,6 +17,7 @@ namespace DeploymentHelper
                 "deploy-qt" => EStepType.DEPLOY_QT,
                 "build-doc" => EStepType.BUILD_DOC,
                 "upload-ftp" => EStepType.UPLOAD_FTP,
+                "msbuild" => EStepType.MSBUILD,
                 _ => EStepType.NONE,
             };
 
@@ -25,6 +26,7 @@ namespace DeploymentHelper
                 EStepType.DEPLOY_QT => new DeployQtStep(this, stepNode),
                 EStepType.BUILD_DOC => new BuildDocStep(this, stepNode),
                 EStepType.UPLOAD_FTP => new UploadFtpStep(this, stepNode),
+                EStepType.MSBUILD => new MsBuildStep(this, stepNode),
                 EStepType.NONE => null,
                 _ => null,
             };
@@ -36,6 +38,7 @@ namespace DeploymentHelper
             {
                 case EStepType.DEPLOY_QT:
                 case EStepType.BUILD_DOC:
+                case EStepType.MSBUILD:
                     try
                     {
                         CmdExecuteHelper.ExecuteCommand(childStep.ToString());
