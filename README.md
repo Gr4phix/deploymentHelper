@@ -14,6 +14,7 @@ Written in C# using the .NET Core 3.1.
   - [QT-Deploy Step](#qt-deploy-step)
   - [Upload using FTP](#upload-using-ftp)
   - [Build documentation](#build-documentation)
+  - [Clean Step](#clean-step)
 
 ## Features
 * Automated deployment of QT-C++ Apps on Windows using 'windeployqt'
@@ -107,3 +108,14 @@ and would result in
 doxygen [...]/Doxyfile
 ```
 which will be executed.
+
+### Clean Step
+This step is added by the tag
+
+```xml
+<clean>
+    <dir path-type='rel'>../target/bin/x86_64</dir>
+</clean>
+```
+
+which removes all files and directories inside the given directory.
