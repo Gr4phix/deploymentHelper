@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Xml;
 using WinSCP;
 
@@ -42,7 +43,13 @@ namespace DeploymentHelper
                                 break;
 
                             case "password":
-                                password = ftpNode.InnerText;
+                                if (ftpNode.FirstChild.GetType().Equals(typeof(XmlText)))
+                                    password = ftpNode.InnerText;
+                                else if (ftpNode.FirstChild.GetType().Equals(typeof(XmlElement)))
+                                {
+                                    var _ = PathHelper.GetAbsolutePathFromFileNode((XmlElement)ftpNode.FirstChild).Item2;
+                                    password = File.ReadAllText(_);
+                                }
                                 break;
 
                             case "destination":
