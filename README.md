@@ -13,6 +13,7 @@ Written in C# using the .NET Core 3.1.
 - [Implemented Steps](#implemented-steps)
   - [QT-Deploy Step](#qt-deploy-step)
   - [Upload using FTP](#upload-using-ftp)
+  - [Build latex](#build-latex)
   - [Build documentation](#build-documentation)
   - [Clean Step](#clean-step)
 
@@ -85,6 +86,29 @@ which will be executed.
 
 ### Upload using FTP
 to be done
+
+### Build latex
+This step comiles a latex file to pdf. The whole latex-toolchain need to be installed and the command 'pdflatex' needs to be in the PATH of the used OS.
+
+This kind of step is added by using 
+```xml
+<latexcompile>
+    ...
+</latexcompile>
+```
+and needs at least a source file given. Define this file by using the `file`-tag embeeded into a `source`-tag. The `file`-tag uses absolute paths by default, but can be changed to relative paths (to the location of the deployment file) by adding the `path-type='rel'` attribute to the tag. There is the possibility to specify a destination filename. If it is done so (like the source filename, but by using the `destination`-tag instead of the `source`-tag), the compiled .pdf file will be copied and renamend to the given directory/ filename.
+
+One latex compile step could look as follows:
+```xml
+<latexcompile>
+    <source>
+        <file path-type='rel'>..\..\test.tex</file>
+    </source>
+    <destination>
+        <file path-type='rel'>target\release\hello_world.pdf</file>
+    </destination>
+</latexcompile>
+```
 
 ### Build documentation
 This step automatically builds doxygen docs. For the program to generate the documentation, 'doxygen' must be available in the PATH of your OS and the doxygen config-file needs to be already generated.
