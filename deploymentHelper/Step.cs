@@ -19,6 +19,7 @@ namespace DeploymentHelper
                 "upload-ftp" => EStepType.UPLOAD_FTP,
                 "msbuild" => EStepType.MSBUILD,
                 "clean" => EStepType.CLEAN,
+                "latexcompile" => EStepType.LATEX_COMPILE,
                 _ => EStepType.NONE,
             };
 
@@ -29,6 +30,7 @@ namespace DeploymentHelper
                 EStepType.UPLOAD_FTP => new UploadFtpStep(this, stepNode),
                 EStepType.MSBUILD => new MsBuildStep(this, stepNode),
                 EStepType.CLEAN => new CleanStep(this, stepNode),
+                EStepType.LATEX_COMPILE => new LatexCompileStep(this, stepNode),
                 EStepType.NONE => null,
                 _ => null,
             };
@@ -54,6 +56,9 @@ namespace DeploymentHelper
 
                 case EStepType.UPLOAD_FTP:
                     return ((UploadFtpStep)childStep).ExecuteStep();
+
+                case EStepType.LATEX_COMPILE:
+                    return ((LatexCompileStep)childStep).ExecuteStep();
 
                 case EStepType.CLEAN:
                     return ((CleanStep)childStep).ExecuteStep();

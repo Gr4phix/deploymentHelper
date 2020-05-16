@@ -7,6 +7,7 @@
         UPLOAD_FTP,
         MSBUILD,
         CLEAN,
+        LATEX_COMPILE,
         NONE
     }
 }

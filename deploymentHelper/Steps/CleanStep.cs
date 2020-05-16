@@ -43,7 +43,15 @@ namespace DeploymentHelper.Steps
             {
                 try
                 {
-                    Directory.Delete(dir, true);
+                    //Directory.Delete(dir, true);
+                    foreach (var subdir in Directory.GetDirectories(dir))
+                    {
+                        Directory.Delete(subdir, true);
+                    }
+                    foreach (var file in Directory.GetDirectories(dir))
+                    {
+                        File.Delete(file);
+                    }
                 }
                 catch (Exception)
                 {

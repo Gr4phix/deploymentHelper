@@ -6,9 +6,15 @@ namespace DeploymentHelper
 {
     public static class CmdExecuteHelper
     {
-        public static void ExecuteCommand(string command)
+        private static string wd;
+
+        public static void ExecuteCommand(string command, string workingDir = "")
         {
-            Process cmd = new Process();
+            var cmd = new Process();
+            if (workingDir.Length > 0)
+            {
+                SetWorkingDirectory(cmd, workingDir);
+            }
             cmd.OutputDataReceived += Cmd_OutputDataReceived;
             cmd.StartInfo.FileName = "cmd.exe";
             cmd.StartInfo.RedirectStandardInput = true;
@@ -32,11 +38,27 @@ namespace DeploymentHelper
                 }
             }
             while (!cmd.HasExited);
+
+            if (workingDir.Length > 0)
+            {
+                ResetWorkingDorectory(cmd);
+            }
         }
 
         private static void Cmd_OutputDataReceived(object sender, DataReceivedEventArgs e)
         {
             Console.WriteLine(e.Data);
+        }
+
+        private static void SetWorkingDirectory(Process cmd, string v)
+        {
+            wd = cmd.StartInfo.WorkingDirectory;
+            cmd.StartInfo.WorkingDirectory = v;
+        }
+
+        private static void ResetWorkingDorectory(Process cmd)
+        {
+            cmd.StartInfo.WorkingDirectory = wd;
         }
     }
 }
