@@ -46,11 +46,26 @@ namespace DeploymentHelper.Steps
                     //Directory.Delete(dir, true);
                     foreach (var subdir in Directory.GetDirectories(dir))
                     {
-                        Directory.Delete(subdir, true);
+                        try
+                        {
+                            Directory.Delete(subdir, true);
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine(ex.Message);
+                        }
                     }
-                    foreach (var file in Directory.GetDirectories(dir))
+                    foreach (var file in Directory.GetFiles(dir))
                     {
-                        File.Delete(file);
+                        try
+                        {
+                            File.SetAttributes(file, FileAttributes.Normal);
+                            File.Delete(file);
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine(ex.Message);
+                        }
                     }
                 }
                 catch (Exception)
