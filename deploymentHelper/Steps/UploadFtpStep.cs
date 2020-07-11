@@ -13,6 +13,8 @@ namespace DeploymentHelper
             private string host;
             private string username;
             private string password;
+            private string protocol;
+            private string fingerprint;
             private readonly List<string> destinations;
             private readonly List<string> sourceFiles;
             private readonly List<string> sourceDirectories;
@@ -22,9 +24,21 @@ namespace DeploymentHelper
                 host = "";
                 username = "";
                 password = "";
+                protocol = "ftp";
+                fingerprint = "";
                 destinations = new List<string>();
                 sourceDirectories = new List<string>();
                 sourceFiles = new List<string>();
+
+                if(node.Attributes.Count > 0)
+                {
+                    if (((XmlElement)node).HasAttribute("protocol") && ((XmlElement)node).GetAttribute("protocol").Equals("sftp"))
+                        protocol = "sftp";
+
+
+                    if (((XmlElement)node).HasAttribute("fingerprint"))
+                        fingerprint = ((XmlElement)node).GetAttribute("fingerprint");
+                }
 
                 foreach (var childIteration in node.ChildNodes)
                 {
@@ -144,10 +158,11 @@ namespace DeploymentHelper
 
                     var sesOpt = new SessionOptions
                     {
-                        Protocol = Protocol.Ftp,
+                        Protocol = protocol.Equals("sftp") ? Protocol.Sftp : Protocol.Ftp,
                         HostName = host,
                         UserName = username,
-                        Password = password
+                        Password = password,
+                        SshHostKeyFingerprint = fingerprint
                     };
 
                     using (Session session = new Session())
@@ -188,7 +203,7 @@ namespace DeploymentHelper
             {
                 var str = "";
 
-                str += $"\t\tUpload to host '{(host.Length > 0 ? host : "<No host entered>")}' " +
+                str += $"\t\tUpload using the {protocol} to host '{(host.Length > 0 ? host : "<No host entered>")}' " +
                     $"by using the username '{(username.Length > 0 ? username : "<No username entered>")}' " +
                     $"and password '{(password.Length > 0 ? password : "<No password entered>")}'.\n";
                 str += "\t\tUpload all the following source directories/ files:\n";
