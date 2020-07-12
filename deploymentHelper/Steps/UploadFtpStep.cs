@@ -161,9 +161,10 @@ namespace DeploymentHelper
                         Protocol = protocol.Equals("sftp") ? Protocol.Sftp : Protocol.Ftp,
                         HostName = host,
                         UserName = username,
-                        Password = password,
-                        SshHostKeyFingerprint = fingerprint
+                        Password = password
                     };
+                    if (fingerprint.Length > 0)
+                        sesOpt.SshHostKeyFingerprint = fingerprint;
 
                     using (Session session = new Session())
                     {
@@ -203,7 +204,7 @@ namespace DeploymentHelper
             {
                 var str = "";
 
-                str += $"\t\tUpload using the {protocol} to host '{(host.Length > 0 ? host : "<No host entered>")}' " +
+                str += $"\t\tUpload to host '{(host.Length > 0 ? host : "<No host entered>")}' " +
                     $"by using the username '{(username.Length > 0 ? username : "<No username entered>")}' " +
                     $"and password '{(password.Length > 0 ? password : "<No password entered>")}'.\n";
                 str += "\t\tUpload all the following source directories/ files:\n";
@@ -224,7 +225,7 @@ namespace DeploymentHelper
                     str += $"\t\t\t- {dest}\n";
                 }
 
-                str += "\t\tusing FTP";
+                str += $"\t\tusing {protocol.ToUpper()}";
 
                 return str;
             }
